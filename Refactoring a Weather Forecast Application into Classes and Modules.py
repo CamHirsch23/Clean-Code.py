@@ -23,10 +23,6 @@ class DataParser:
         humidity = data["humidity"]
         return f"Weather in {city}: {temperature} degrees, {condition}, Humidity: {humidity}%"
 
-# user_interface.py
-from weather_data_fetcher import WeatherDataFetcher
-from data_parser import DataParser
-
 class UserInterface:
     def __init__(self):
         self.fetcher = WeatherDataFetcher()
